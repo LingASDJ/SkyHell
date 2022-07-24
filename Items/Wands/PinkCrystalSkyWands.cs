@@ -14,11 +14,14 @@ namespace SkyHell.Items.Wands
 		public override void SetStaticDefaults()
 		{
 			//Catand
-			DisplayName.SetDefault("等待翻译");
-			Tooltip.SetDefault("等待翻译");
+			DisplayName.SetDefault("Amethyst sky staff");
+			Tooltip.SetDefault("The magic mineral power of Amethyst and the magic mineral and meteorite in the evil land are combined. It is said that they are used to kill blasphemers.\n"
+			+ "Launch two falling stars at one time, with extremely weak repulsion force.\n\n"
+			+ "A word: in his previous life, he sacrificed himself for the peace of Tara...\n"
+			+ "But this short-lived peace will eventually be broken...");
 
 			DisplayName.AddTranslation(7,"紫晶天空法杖");
-			Tooltip.AddTranslation(7, "紫晶的魔矿力与恶地的魔矿和陨石的综合产物，传说是屠杀亵渎者用的。\n一次性发射2个下坠的星星，极弱的击退力。\n\n--只言片语：在前世，他就为了泰拉的和平而献祭自己……，\n-但这短暂的和平终究会被打破…………");
+			Tooltip.AddTranslation(7, "紫晶的魔矿力与恶地的魔矿和陨石的综合产物，传说是屠杀亵渎者用的。\n一次性发射2个下坠的星星，极弱的击退力。\n\n--只言片语：在前世，他就为了泰拉的和平而献祭自己……，\n-但这短暂的和平终究会被打破……");
 		}
 
 		public override void SetDefaults() {

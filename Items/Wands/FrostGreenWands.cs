@@ -14,8 +14,13 @@ namespace SkyHell.Items.Wands
 		public override void SetStaticDefaults()
 		{
 			//Catand
-			DisplayName.SetDefault("等待翻译");
-			Tooltip.SetDefault("等待翻译");
+			DisplayName.SetDefault("Jungle leaf green staff");
+			Tooltip.SetDefault("The jungle is growing restlessly, and the power of the sky has been desecrated…\n"
+			+ "Launch three different barrages randomly…\n\n"
+			+ "A word: the peace of the past has disappeared, and disaster is gradually coming\n\n"
+			+ "Magic missile: 90 damage\n\n"
+			+ "Crazy star: 100 damage\n\n"
+			+ "Rainbow Magic Missile: 120 damage");
 
 			DisplayName.AddTranslation(7,"丛林叶绿法杖");
 			Tooltip.AddTranslation(7,"丛林正在焦躁不安的生长，天空的力量已经被亵渎……\n随机发射三种不同的弹幕……\n\n只言片语：昔日的和平已经消失，灾难正在逐步降临\n\n魔法导弹:90伤害\n\n狂星:100伤害\n\n彩虹魔法导弹:120伤害");

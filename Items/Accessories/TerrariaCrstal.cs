@@ -10,12 +10,19 @@ namespace SkyHell.Items.Accessories
 		public override void SetStaticDefaults()
 		{
 			//Catand
-			DisplayName.SetDefault("等待翻译");
+			DisplayName.SetDefault("Terracrystal");
 
 			DisplayName.AddTranslation(7,"泰拉水晶");
 
 			//Catand
-			Tooltip.SetDefault("等待翻译");
+			Tooltip.SetDefault("Lunar Madness it's not the end,go ahead, boy. It's just beginning!\n\nIncreases 10% damage\n"
+			+ "Increases 30% multiplier damage\n"
+			+ "Increases base damage by 14\n"
+			+ "Increases 25% damage\n"
+			+ "Increases 10% melee critical chance\n"
+			+ "Increases magic armor penetration by 15\n"
+			+ "Increases ranged shoot speed by 15%\n"
+			+ "A word:After the Lunar Madness, The real journey has just begun…");
 
 			Tooltip.AddTranslation(7, "月亮末日后并不是终点，前进吧，孩子。一切才刚刚开始！\n\n增加 10% 伤害\n"
 			+ "增加 30% 倍数伤害\n"

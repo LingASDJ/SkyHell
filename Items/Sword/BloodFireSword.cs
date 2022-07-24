@@ -16,8 +16,9 @@ namespace SkyHell.Items.Sword
 		public override void SetStaticDefaults()
 		{
 			//Catand
-			DisplayName.SetDefault("等待翻译");
-			Tooltip.SetDefault("等待翻译");
+			DisplayName.SetDefault("Demon flame Twilight blade");
+			Tooltip.SetDefault("The embodiment of omnipotence and power, its degree of fear is inevitable.\n\n"
+			+ "A few words: Devil and God cannot coexist…");
 
 			DisplayName.AddTranslation(7,"魔焰暮刃");
 			Tooltip.AddTranslation(7,"全能与力量的化身，其令人恐惧的程度无可避免。\n\n只言片语：魔与神，本不能共存……");
