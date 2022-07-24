@@ -1,4 +1,5 @@
 displayName = [c/ffa900:天][c/ffb900:狱][c/ffc900:之][c/ffd900:境]
 author = JDSALing
-version = 0.6.7
+version = 0.6.95
 includeSource = true
+homepage = https://jq.qq.com/?_wv=1027&k=UqziOPNg

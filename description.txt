@@ -4,7 +4,8 @@
 被[c/ff0000:遗弃的离散常量]已经到达这里，那么，你能成为这个世界的变数的契机之人吗？
 
 [i:4960]代码：[c/22DD97:JDSALing]
-[i:5075]美工：[c/FFA500:Delicateloong] & [c/99DD97:冷群]
+[i:5075]美工：
+[c/FFA500:Delicateloong] & [c/99DD97:冷群]& [c/449988:昔弦]
 [i:5031]音乐：[c/bcbcbc:Prohonor]
 [i:1586]平衡：[c/9d009d:Catand]
 [i:4989]测试：[c/00ff00:Fang,口水猫,Liuliu,前路,呐呐子,屑E等]
@@ -46,7 +47,7 @@ V0.1：
 1.加强泰拉水晶
 2.削弱皇家御用霰弹机枪的暴击率
 
-[c/00ff00:V0.67：]
+[c/00ff00:V0.67-8：]
 1.Added English translation (追加英文翻译)
 ------------------------------------------------
 English:
@@ -95,5 +96,5 @@ Temporarily used as an attached MOD for players who serve Calamity.
 1. Strengthen Terraria Crystal
 2. Weakened the crit rate of the Royal Shotgun
 
-[c/00ff00:V0.67:]
+[c/00ff00:V0.67-8:]
 1.Added English translation
