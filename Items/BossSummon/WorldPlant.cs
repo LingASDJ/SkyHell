@@ -12,8 +12,8 @@ namespace SkyHell.Items.BossSummon
 		public override void SetStaticDefaults()
 		{
 			//Catand
-			DisplayName.SetDefault("等待翻译");
-			Tooltip.SetDefault("等待翻译");
+			DisplayName.SetDefault("God of plants");
+			Tooltip.SetDefault("Call the flower of the century, a freak flower creeping in the depths of the jungle.");
 
 			DisplayName.AddTranslation(7,"植物之神");
 			Tooltip.AddTranslation(7,"召唤世纪之花，蔓生在丛林深处的畸形怪花。");
