@@ -1,0 +1,40 @@
+# 特别感谢我是超级GTV的HJSON指导
+
+Mods: {
+SkyHell: {
+		Prefix: 
+			{
+			PreFixedMeleePreat: 神宗
+			PreFixedMeleeRubbish: 锈蚀
+			PreFixedMeleeNormal: 愚钝
+			PreFixedMeleeGood: 锐利
+
+			PreFixedMagicPreact:渊灵
+			PreFixedMagicGood:起源
+			PreFixedMagicNormal:怠惰
+			PreFixedMagicBad:诅咒
+
+			PreFixedRangeBad:过热
+			PreFixedRangeNormal:超载
+			PreFixedRangeGood:高速
+			PreFixedRangePreat:弑神
+
+			PreFixedAnyOne:无度
+			PreFixedAnyTwo:神熵
+			PreFixedAnyThe:血光
+			}
+	Config:
+	{
+		Title:
+			{
+			DBTitle:"任意魔矿"
+			EZTitle:"任意恶地方块"
+			TNTitle:"任意恶地首领战利品\n([c/00ffff:暗影磷片x5]/[c/00ffff:组织样本x5])"
+			STitle:"任意新三王掉落的魂"
+			DSTitle:"任意恶地剑"
+			TJitle:"钛金或精金"
+			ZYSTitle:"任意职业徽章"
+			}
+		}
+	}
+}

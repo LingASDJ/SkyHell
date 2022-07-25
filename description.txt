@@ -7,8 +7,8 @@
 [i:5075]美工：
 [c/FFA500:Delicateloong] & [c/99DD97:冷群]& [c/449988:昔弦]
 [i:5031]音乐：[c/bcbcbc:Prohonor]
-[i:1586]平衡：[c/9d009d:Catand]
-[i:4989]测试：[c/00ff00:Fang,口水猫,Liuliu,前路,呐呐子,屑E等]
+[i:1586]平衡：[c/9d009d:Catand],[c/00ffff:Fang]
+[i:4989]测试：Fang,Saliva Cat,Liuliu,前路,呐呐子,屑E等
 
 [i:3110]天狱之境开发总群：[c/FFA500:468788023] 
 
@@ -48,7 +48,18 @@ V0.1：
 2.削弱皇家御用霰弹机枪的暴击率
 
 [c/00ff00:V0.67-8：]
-1.Added English translation (追加英文翻译)
+1.追加英文翻译
+
+[c/00ff00:V0.691-2：]
+1.追加15个新词条：
+分别为：
+近战武器：锈蚀，愚钝，锐利，神宗
+魔法武器：诅咒，怠惰，起源，渊灵
+远程武器：过热，超载，高速，弑神
+特殊词条：无度[魔法]，神熵[射手]，血光[近战]
+[温馨提示：特殊词条为三大职业的究极词条，非常难刷出]
+2.使用Hjson格式,现在更加方便管理多语言
+
 ------------------------------------------------
 English:
 [c/ff0000:Hell in the sky where millions of souls are imprisoned]
@@ -57,9 +68,9 @@ No one can break free from her curse, and the world, abandoned by the universe, 
 The [c/ff0000: Abandoned Discrete Constant] has arrived here, so, can you be the one who is the chance person for the variables of this world?
 
 [i:4960]Code: [c/22DD97:JDSALing]
-[i:5075] Artists: [c/FFA500:Delicateloong] & [c/99DD97:Lengqun]
+[i:5075]Artists: [c/FFA500:Delicateloong] & [c/99DD97:Lengqun]
 [i:5031]Music: [c/bcbcbc:Prohonor]
-[i:1586] Balance: [c/9d009d:Catand]
+[i:1586]Balance: [c/9d009d:Catand]
 
 Changelog:
 V0.1:
@@ -98,3 +109,13 @@ Temporarily used as an attached MOD for players who serve Calamity.
 
 [c/00ff00:V0.67-8:]
 1.Added English translation
+
+[c/00ff00:V0.691-2:]
+1. Add 15 new weapon tag:
+They are:
+Melee Weapons: Rust, Stupid, Sharp, God Sect
+Magic Weapons: Cursed, Lazy, Origin, Abyss Elf
+Ranged Weapons: Over Hot,OverLoad, High Speed, God Killing
+Special Tag: Infinite [Magic], God Entropy [Archer], Bloodlight [Melee]
+[Reminder: Any weapon Tag Middle is the ultimate Tag for the three major occupations, and it is very difficult to come out]
+2. Using the Hjson format, it is now more convenient to manage multiple languages

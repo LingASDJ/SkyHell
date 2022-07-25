@@ -1,12 +1,13 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 
 namespace SkyHell.Content
 {
 	public class SkyHellRecipes : ModSystem
 	{
-
+		//生命水晶
 		public override void AddRecipes()
 		{
 			Recipe baseRecipe = Recipe.Create(ItemID.LifeCrystal, 1);
@@ -20,7 +21,7 @@ namespace SkyHell.Content
 
 		public override void AddRecipeGroups()
 		{
-			RecipeGroup recipeGroupone = new RecipeGroup(() => "任意魔矿", //游戏显示合成组的名字
+			RecipeGroup recipeGroupone = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.DBTitle"), //游戏显示合成组的名字
 				new int[]
 				{
 				ItemID.DemoniteBar,
@@ -29,7 +30,7 @@ namespace SkyHell.Content
 
 			RecipeGroup.RegisterGroup("DBRecipes", recipeGroupone);
 
-			RecipeGroup recipeGrouptwo = new RecipeGroup(() => "任意恶地地块", //游戏显示合成组的名字
+			RecipeGroup recipeGrouptwo = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.EZTitle"), //游戏显示合成组的名字
 				new int[]
 				{
 				763,
@@ -37,7 +38,7 @@ namespace SkyHell.Content
 				});//添加ID
 			RecipeGroup.RegisterGroup("FXRecipes", recipeGrouptwo);
 
-			RecipeGroup recipeGroupthree = new RecipeGroup(() => "任意恶地首领战利品\n([c/00ffff:暗影磷片x5]或[c/00ffff:组织样本x5])", //游戏显示合成组的名字
+			RecipeGroup recipeGroupthree = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.TNTitle"),
 				new int[]
 				{
 				1329,
@@ -45,7 +46,8 @@ namespace SkyHell.Content
 				});//添加ID
 			RecipeGroup.RegisterGroup("TNRecipes", recipeGroupthree);
 
-			RecipeGroup recipeGroupfour = new RecipeGroup(() => "任意新三王掉落的魂", //游戏显示合成组的名字
+			//"任意新三王掉落的魂", //游戏显示合成组的名字
+			RecipeGroup recipeGroupfour = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.STitle"), 
 				new int[]
 				{
 				ItemID.SoulofFright,
@@ -55,12 +57,12 @@ namespace SkyHell.Content
 
 			RecipeGroup.RegisterGroup("SHKRecipes", recipeGroupfour);
 
-			RecipeGroup recipeGroupfive = new RecipeGroup(() => "紫晶天空法杖",
+			RecipeGroup recipeGroupfive = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.STitle"),
 				ModContent.ItemType<Items.Wands.PinkCrystalSkyWands>());
 
 			RecipeGroup.RegisterGroup("PinkWandsRecipes", recipeGroupfive);
 
-			RecipeGroup recipeGroupsix = new RecipeGroup(() => "任意恶地剑", //游戏显示合成组的名字
+			RecipeGroup recipeGroupsix = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.DSTitle"),
 				new int[]
 				{
 				795,
@@ -69,7 +71,7 @@ namespace SkyHell.Content
 
 			RecipeGroup.RegisterGroup("EARecipes", recipeGroupsix);
 
-			RecipeGroup recipeGroupseven = new RecipeGroup(() => "精金或钛金", //游戏显示合成组的名字
+			RecipeGroup recipeGroupseven = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.TJitle"),
 			new int[]
 			{
 						ItemID.AdamantiteBar,
@@ -78,7 +80,7 @@ namespace SkyHell.Content
 
 			RecipeGroup.RegisterGroup("TJRecipes", recipeGroupseven);
 
-			RecipeGroup recipeGroupeight = new RecipeGroup(() => "任意职业徽章", //游戏显示合成组的名字
+			RecipeGroup recipeGroupeight = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.ZYSTitle"),
 			new int[]
 			{
 						ItemID.SorcererEmblem,
