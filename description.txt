@@ -60,6 +60,37 @@ V0.1：
 [温馨提示：特殊词条为三大职业的究极词条，非常难刷出]
 2.使用Hjson格式,现在更加方便管理多语言
 
+[c/00ff00:V0.693-7：]
+1.削弱皇家霰弹机枪
+2.同步一些新的API接口
+
+[c/00ff00:V0.693-8：]
+1.削弱皇家系列机枪
+2.调整一些新的词条
+
+[c/00ff00:V0.693-9：]
+1.调整一些新的词条
+
+[c/00ff00:V0.693-10：]
+1.修复皇家机枪入水无法射弹的Bug
+2.调整丛林叶绿法杖的攻击AI
+
+[c/00ff00:V0.693-12：]
+1.调整部分文案
+2.调整丛林叶绿法杖的属性面板
+
+[c/00ff00:V0.693-13-14：]
+1.调整泰拉水晶的属性面板
+2.部分特级词条属性调整
+
+[c/00ff00:V0.693-13-14：]
+1.调整泰拉水晶的属性面板
+2.部分特级词条属性调整
+
+[c/00ff00:V0.69800：]
+1.修复部分特级词条
+2.从本版本开始，进行群内发放！
+
 ------------------------------------------------
 English:
 [c/ff0000:Hell in the sky where millions of souls are imprisoned]
@@ -119,3 +150,21 @@ Ranged Weapons: Over Hot,OverLoad, High Speed, God Killing
 Special Tag: Infinite [Magic], God Entropy [Archer], Bloodlight [Melee]
 [Reminder: Any weapon Tag Middle is the ultimate Tag for the three major occupations, and it is very difficult to come out]
 2. Using the Hjson format, it is now more convenient to manage multiple languages
+
+[c/00ff00:V0.693-7：]
+1. Weaken the Royal Shotgun Machine Gun
+2. Synchronize some new API interfaces
+[c/00ff00:V0.693-8：]
+1. Weakening Royal series machine guns
+2. Adjust some new entries
+[c/00ff00:V0.693-9：]
+1. Adjust some new entries
+[c/00ff00:V0.693-10：]
+1. Fix the bug that the Royal Machine Gun can't fire when it enters the water
+2. Adjust the attack AI of Forest Leaf Green Staff
+[c/00ff00:V0.693-12：]
+1. Adjust some documents
+2. Adjust the attribute panel of Forest Leaf Green Staff
+[c/00ff00:V0.693-13：]
+1. Adjust the attribute panel of Terra crystal
+2. Property adjustment of some super Weapons tag

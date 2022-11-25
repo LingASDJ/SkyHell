@@ -125,3 +125,6 @@ ipch/
 *.sap
 obj/Debug/net6.0/SkyHell.csproj.AssemblyReference.cache
 obj/Debug/net6.0/SkyHell.assets.cache
+SkyHell.dll
+SkyHell.dll
+*.dll

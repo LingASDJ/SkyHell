@@ -9,16 +9,16 @@ namespace SkyHell.Items.Gun
 	{
 		public override void SetStaticDefaults()
 		{
-			//Catand
+
 			DisplayName.SetDefault("Extreme star cannon");
 			Tooltip.SetDefault("Oh, my God. You have obtained the unparalleled extreme star cannon.\n"
 			+ "Now, who is the real master of the sky? There is a 35% probability that ammunition will not be consumed.\n"
 			+ "If there is no ammunition and the backpack carries a heaven badge, the next shooting true star cannon mode will be activated.\n"
 			+ "Rainbow tracking missiles can be launched before exiting the game without consuming ammunition…\n\n"
-			+ "A word: the instant the stars fall, the fleeting light is also very beautiful…");
+			+ " the instant the stars fall, the fleeting light is also very beautiful…");
 
 			DisplayName.AddTranslation(7,"究极星星炮");
-			Tooltip.AddTranslation(7,"哦，天哪。你获得了无与伦比的究极星星炮。\n现在，谁才是真正的天空之主？有35%的概率不消耗弹药。\n如果没有弹药且背包携带有天界徽章，则下一次射击真-星星炮模式将被激活。\n在退出游戏前均可发射彩虹跟踪导弹且不消耗弹药……\n\n只言片语：星空下坠的瞬间，转瞬即逝的耀光也很美丽……");
+			Tooltip.AddTranslation(7,"哦，天哪。你获得了无与伦比的究极星星炮。\n现在，谁才是真正的天空之主？有35%的概率不消耗弹药。\n如果没有弹药且背包携带有天界徽章，则下一次射击真-星星炮模式将被激活。\n在退出游戏前均可发射彩虹跟踪导弹且不消耗弹药……\n\n星空下坠的瞬间，转瞬即逝的耀光也很美丽……");
 		}
 
 		public override void SetDefaults()

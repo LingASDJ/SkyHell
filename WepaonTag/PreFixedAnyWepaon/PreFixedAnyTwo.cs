@@ -9,7 +9,7 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 
 		public virtual float Power => 1f;
 
-		public override PrefixCategory Category => PrefixCategory.AnyWeapon;
+		public override PrefixCategory Category => PrefixCategory.Ranged;
 
 		public override bool CanRoll(Item item)
 		{

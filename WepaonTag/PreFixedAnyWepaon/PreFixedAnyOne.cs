@@ -6,10 +6,9 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 	//魔法传说词条 概率5%
 	public class PreFixedAnyOne: ModPrefix
 	{
-
 		public virtual float Power => 1f;
 
-		public override PrefixCategory Category => PrefixCategory.AnyWeapon;
+		public override PrefixCategory Category => PrefixCategory.Magic;
 
 		public override bool CanRoll(Item item)
 		{

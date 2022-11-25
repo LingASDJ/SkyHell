@@ -1,25 +1,25 @@
 Mods: {
 SkyHell: {
-		Prefix: 
-		{
-			PreFixedMeleePreat: God Sect
-			PreFixedMeleeRubbish: Rust
-			PreFixedMeleeNormal: Stupid
-			PreFixedMeleeGood: Sharp
+	Prefix: 
+	{
+		PreFixedMeleePreat: God Sect
+		PreFixedMeleeRubbish: Rust
+		PreFixedMeleeNormal: Stupid
+		PreFixedMeleeGood: Sharp
 
-			PreFixedMagicPreact:Abyss Elf
-			PreFixedMagicGood:Origin
-			PreFixedMagicNormal:Lazy
-			PreFixedMagicBad:Cursed
+		PreFixedMagicPreact:Abyss Elf
+		PreFixedMagicGood:Origin
+		PreFixedMagicNormal:Lazy
+		PreFixedMagicBad:Cursed
 
-			PreFixedRangeBad:Over Hot
-			PreFixedRangeNormal:OverLoad
-			PreFixedRangeGood:High Speed
+		PreFixedRangeBad:Over Hot
+		PreFixedRangeNormal:OverLoad
+		PreFixedRangeGood:High Speed
 
-			PreFixedAnyOne:Infinite
-			PreFixedAnyTwo:God Entropy
-			PreFixedAnyThe:Blood Light
-		}
+		PreFixedAnyOne:Infinite
+		PreFixedAnyTwo:God Entropy
+		PreFixedAnyThe:Blood Light
+	}
 	Config:
 	{
 		Title:
@@ -32,6 +32,20 @@ SkyHell: {
 		TJTitle:"Titanium/Adamantite"
 		ZYSTitle:"Any Career Badge"
 			}
-		}
+	ModItem:
+	{
+		TerrCrystalName:"TerrariaCrystal"
+		TerrCrystalDes:
+		'''
+		Lunar Madness it's not the end,go ahead, adventurer. It's just beginning!
+		Increases 80% damage
+		Increases base damage by 125
+		Increases 10% melee critical chance"
+		Increases magic armor penetration by 15"
+		Increases ranged shoot speed by 15%"
+		After the Lunar Madness, The real journey has just begun¡­
+		'''
+	}
+	}
 	}
 }

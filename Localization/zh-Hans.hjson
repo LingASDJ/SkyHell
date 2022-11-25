@@ -2,6 +2,12 @@
 
 Mods: {
 SkyHell: {
+		Wands:
+		{
+			Title:{
+				NotFind:"附近没有敌对生物,无法发射弹幕..."
+			}
+		}
 		Prefix: 
 			{
 			PreFixedMeleePreat: 神宗
@@ -34,7 +40,22 @@ SkyHell: {
 			DSTitle:"任意恶地剑"
 			TJitle:"钛金或精金"
 			ZYSTitle:"任意职业徽章"
+			},
+		ModItem:
+			{
+			TerrCrystalName:"泰拉水晶"
+			TerrCrystalDes:
+			'''
+			月亮末日后并不是终点，前进吧，孩子。
+			我们的旅途，才刚刚开始。
+			增加全职业武器的 [c/ff0000:80%] 伤害
+            增加所有武器的总伤害 [c/00ff00:125]
+            增加近战武器暴击率[c/00ff55:10%]
+            魔法穿透目标护甲 [c/ffff00:15] 防御点
+            远程射击速度提高 [c/00ffff:15%]
+			'''
 			}
-		}
+	}
+
 	}
 }

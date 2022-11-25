@@ -9,7 +9,7 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 
 		public virtual float Power => 1f;
 
-		public override PrefixCategory Category => PrefixCategory.AnyWeapon;
+		public override PrefixCategory Category => PrefixCategory.Melee;
 
 		public override bool CanRoll(Item item)
 		{
@@ -23,7 +23,7 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
 		{
-			damageMult *= 2f * Power;
+			damageMult *= 1.95f * Power;
 			useTimeMult -= 0.24f * Power;
 			knockbackMult *= 1f + 0.45f * Power;
 			scaleMult *= 1f + 0.5f * Power;

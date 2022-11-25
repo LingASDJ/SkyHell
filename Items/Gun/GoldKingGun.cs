@@ -11,13 +11,13 @@ namespace SkyHell.Items.Gun
 	{
 		public override void SetStaticDefaults()
 		{
-			//Catand
+
 			DisplayName.SetDefault("Royal defense shotgun");
 			Tooltip.SetDefault("A shotgun from the royal family，It uses ammo bullet as bullets. [c/00ffff:Joined the blessing of the soul, now it can be stronger than ever!]\n\n"
-			+ "A word: the glory of the royal family is here!");
+			+ " the glory of the royal family is here!");
 
 			DisplayName.AddTranslation(7,"皇家防卫霰弹机枪");
-			Tooltip.AddTranslation(7,"来自于皇家的御用枪械，用火枪作为子弹\n[c/00ffff:加入了灵魂的祝福，现在能比曾经的更强！]\n\n只言片语：皇家的荣光，在这里显现！");
+			Tooltip.AddTranslation(7,"来自于皇家的御用枪械，用火枪作为子弹\n[c/00ffff:加入了灵魂的祝福，现在能比曾经的更强！]\n\n皇家的荣光，在这里显现！");
 		}
 
 		public override void SetDefaults()
@@ -34,14 +34,14 @@ namespace SkyHell.Items.Gun
 			Item.UseSound = SoundID.Item36;
 
 			Item.DamageType = DamageClass.Ranged;
-			Item.damage = 60;
+			Item.damage = 6;
 			Item.knockBack = 6f;
 			Item.noMelee = true;
 
-			Item.crit = 10;
+			Item.crit = 3;
 
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 16f;
+			Item.shootSpeed = 12f;
 			Item.useAmmo = AmmoID.Bullet;
 		}
 
