@@ -34,14 +34,14 @@ namespace SkyHell.Items.Gun
 			Item.UseSound = SoundID.Item36;
 
 			Item.DamageType = DamageClass.Ranged;
-			Item.damage = 60;
+			Item.damage = 6;
 			Item.knockBack = 6f;
 			Item.noMelee = true;
 
-			Item.crit = 10;
+			Item.crit = 3;
 
 			Item.shoot = ProjectileID.PurificationPowder;
-			Item.shootSpeed = 16f;
+			Item.shootSpeed = 12f;
 			Item.useAmmo = AmmoID.Bullet;
 		}
 

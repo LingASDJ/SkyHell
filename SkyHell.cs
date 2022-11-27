@@ -6,4 +6,5 @@ namespace SkyHell
 	{
 
     }
+	//Main.NewText 打出一行字
 }

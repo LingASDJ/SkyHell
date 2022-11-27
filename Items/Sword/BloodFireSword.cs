@@ -7,7 +7,9 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
-
+using SkyHell.Projectiles;
+using System;
+using SkyHell.Projectiles.StateMachine;
 
 namespace SkyHell.Items.Sword
 {
@@ -37,33 +39,66 @@ namespace SkyHell.Items.Sword
 			Item.crit = 15;
 			Item.UseSound = SoundID.Item1;
 			Item.DamageType = DamageClass.Melee;
-			Item.shoot = ProjectileID.DD2PhoenixBowShot;
-			Item.shootSpeed = 20;
+			Item.shoot = ModContent.ProjectileType<FireBallBeam>();
+			Item.shootSpeed = 10;
 		}
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 		{
-			if (Main.rand.Next(100) <= 10)
+			//玩家的中心点坐标
+			Vector2 playCenter = player.Center;
+			//鼠标的中心点坐标
+			Vector2 mousePos = Main.MouseWorld;
+
+			//PM=OM-OP(单位向量)
+			Vector2 vec = mousePos - playCenter;
+
+            // 求出vec向量的角度，利用tan的反函数，注意，Math.Atan返回的是一个double类型
+            // double比float类型的精准度高，所以需要强制转换
+			//Anti-Tan A代表Anti 也就是反的意思
+            float rad = (float)Math.Atan2(vec.Y, vec.X);
+			for (float i = -MathHelper.Pi; i < MathHelper.Pi; i += MathHelper.PiOver2 / 16f)
 			{
-				Item.shoot = ProjectileID.DD2PhoenixBowShot;
-				return false;
-			}
+                //射击区域
+                float readRed = rad + i * MathHelper.TwoPi;
 
-			else if (Main.rand.Next(100) >= 80)
-			{
-				Item.shoot = ProjectileID.NebulaArcanum;
-				return false;
-			}
+                //最终运算结果
+                Vector2 finalVec = new Vector2((float)Math.Cos(readRed),(float)Math.Sin(readRed));
 
-			else if (Main.rand.Next(100) >= 0)
-			{
-				Item.shoot = ProjectileID.FairyQueenMagicItemShot;
-				return true;
-			}
+                
+                //单位向量乘以16就是16倍的速度
+                finalVec *= 16;
 
-			return true;
+                Projectile.NewProjectile(source, position, finalVec, type, damage, knockback, player.whoAmI, 0f);
+            }
 
+            return true;
 		}
+
+		//public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+		//{
+		//	if (Main.rand.Next(100) <= 10)
+		//	{
+		//		Item.shoot = ProjectileID.DD2PhoenixBowShot;
+		//		return false;
+		//	}
+
+		//	else if (Main.rand.Next(100) >= 80)
+		//	{
+		//		Item.shoot = ProjectileID.NebulaArcanum;
+		//		return false;
+		//	}
+
+		//	else if (Main.rand.Next(100) >= 0)
+		//	{
+		//		Item.shoot = ProjectileID.FairyQueenMagicItemShot;
+		//		return true;
+		//	}
+
+		//	return true;
+
+		//}
+
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
@@ -76,7 +111,24 @@ namespace SkyHell.Items.Sword
 			Dust.NewDustDirect(hitbox.TopLeft(), hitbox.Width, hitbox.Height,
 				DustID.GemTopaz, 0, 0, 100, Color.White, 1);
 
-		}
+			Vector2 vector = new Vector2(2.0f, 5.0f);
+			Vector2 vector1 = new Vector2(-5.0f,7.0f);
+			Main.NewText(vector+vector1);
+			//Main.NewText(vector - vector);
+			//Main.NewText(vector*5.0f);
+
+			Vector2 vector2 = new Vector2(2.0f, 1f);
+			Main.NewText("最终结果:"+vector2*2);
+
+            Vector2 OA = new Vector2(2, 3);
+            Vector2 OB = new Vector2(-5, 2);
+
+			Vector2 vector9 = Vector2.Normalize(OA + OB);
+			Vector2 vector10 = vector9 * 16;
+
+			Main.NewText(vector9);
+            Main.NewText(vector10);
+        }
 
 
 		public override void AddRecipes()

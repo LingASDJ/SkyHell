@@ -30,7 +30,7 @@ namespace SkyHell.Items.Gun
 			Item.width = 22;
 			Item.height = 22;
 			Item.rare = 9;
-			Item.crit = 35;
+			Item.crit = 5;
 			Item.value = Item.sellPrice(0, 10, 10, 10);
 			Item.useTime = 5;
 			Item.useAnimation = 5;
@@ -46,7 +46,7 @@ namespace SkyHell.Items.Gun
 
 			// Gun Properties
 			Item.shoot = ProjectileID.BallofFire; // For some reason, all the guns in the vanilla source have this.
-			Item.shootSpeed = 25f; // The speed of the projectile (measured in pixels per frame.)
+			Item.shootSpeed = 85f; // The speed of the projectile (measured in pixels per frame.)
 			Item.useAmmo = AmmoID.Bullet;
 		}
 
@@ -74,3 +74,7 @@ namespace SkyHell.Items.Gun
 		}
 	}
 }
+
+/*
+ 光栅化
+ */

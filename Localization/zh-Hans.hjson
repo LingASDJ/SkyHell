@@ -2,6 +2,12 @@
 
 Mods: {
 SkyHell: {
+		Wands:
+		{
+			Title:{
+				NotFind:"附近没有敌对生物,无法发射弹幕..."
+			}
+		}
 		Prefix: 
 			{
 			PreFixedMeleePreat: 神宗

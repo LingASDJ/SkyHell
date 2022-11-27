@@ -6,7 +6,6 @@ using Terraria.ID;
 using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
-
 namespace SkyHell.Items.Wands
 {
 	public class PinkCrystalSkyWands : ModItem
