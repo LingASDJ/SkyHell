@@ -125,3 +125,12 @@ ipch/
 *.sap
 obj/Debug/net6.0/SkyHell.csproj.AssemblyReference.cache
 obj/Debug/net6.0/SkyHell.assets.cache
+.vs/SkyHell/FileContentIndex/061edb6c-6c20-4145-8b6e-905da23668cc.vsidx
+.vs/SkyHell/FileContentIndex/3eb9379a-1222-4371-a1e5-98daa7b6eff9.vsidx
+.vs/SkyHell/FileContentIndex/5a929c10-87f3-4bb5-ab02-f37c1658be34.vsidx
+.vs/SkyHell/FileContentIndex/92b03dfc-bdd3-4118-992b-7783e0ce344e.vsidx
+obj/Debug/net6.0/SkyHell.assets.cache
+obj/project.assets.json
+obj/project.nuget.cache
+obj/SkyHell.csproj.nuget.dgspec.json
+obj/SkyHell.csproj.nuget.g.props

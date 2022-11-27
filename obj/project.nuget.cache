@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xbpE3I1Ys6Keyn2PNUAkVlJjBRblPkHB7Ws10J1TpANPHtZGQ7j1r81gN3wyjLP4UTDfzBt0SN7qIVAbRZXEKQ==",
-  "success": false,
+  "dgSpecHash": "x1TIoGp4zdqV/ncdBmcRYUe/W4ZUbv6LNFHwF9AjlVFSoA7qTUsae1RxXupuUmG8NYcPlHjrncPIJqo+ylSO4A==",
+  "success": true,
   "projectFilePath": "D:\\我的文档\\My Games\\Terraria\\tModLoader\\ModSources\\SkyHell\\SkyHell.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "找不到包 tModLoader.CodeAssist。源 Microsoft Visual Studio Offline Packages 中不存在具有此 ID 的包",
-      "libraryId": "tModLoader.CodeAssist",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\honor\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
 }
