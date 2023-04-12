@@ -9,9 +9,9 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 
 		public virtual float Power => 1f;
 
-		public override PrefixCategory Category => PrefixCategory.Melee;
+        public override PrefixCategory Category => PrefixCategory.Custom;
 
-		public override bool CanRoll(Item item)
+        public override bool CanRoll(Item item)
 		{
 			return true;
 		}
