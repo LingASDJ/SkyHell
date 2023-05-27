@@ -1,0 +1,141 @@
+
+Mods: {
+	SkyHell: {
+		Prefixes: {
+			PreFixedMeleePreat.DisplayName: 神宗
+			PreFixedMeleeRubbish.DisplayName: 锈蚀
+			PreFixedMeleeNormal.DisplayName: 愚钝
+			PreFixedMeleeGood.DisplayName: 锐利
+			PreFixedMagicPreact.DisplayName: 渊灵
+			PreFixedMagicGood.DisplayName: 起源
+			PreFixedMagicNormal.DisplayName: 怠惰
+			PreFixedMagicBad.DisplayName: 诅咒
+			PreFixedRangeBad.DisplayName: 过热
+			PreFixedRangeNormal.DisplayName: 超载
+			PreFixedRangeGood.DisplayName: 高速
+			PreFixedAnyOne.DisplayName: 无度
+			PreFixedAnyTwo.DisplayName: 神熵
+			PreFixedAnyThe.DisplayName: 血光
+			PreFixedRangePreat.DisplayName: 弑神
+		}
+
+		Config: {
+			Title: {
+				DBTitle: 任意魔矿
+				EZTitle: 任意恶地方块
+				TNTitle:
+					'''
+					任意恶地首领战利品
+					([c/00ffff:暗影磷片x5]/[c/00ffff:组织样本x5])
+					'''
+				STitle: 任意新三王掉落的魂
+				DSTitle: 任意恶地剑
+				/* TJTitle: Titanium/Adamantite */
+				ZYSTitle: 任意职业徽章
+				TJitle: 钛金或精金
+			}
+
+			ModItem: {
+				TerrCrystalName: 泰拉水晶
+				TerrCrystalDes:
+					'''
+					月亮末日后并不是终点，前进吧，孩子。
+					我们的旅途，才刚刚开始。
+					增加全职业武器的 [c/ff0000:80%] 伤害
+					         增加所有武器的总伤害 [c/00ff00:125]
+					         增加近战武器暴击率[c/00ff55:10%]
+					         魔法穿透目标护甲 [c/ffff00:15] 防御点
+					         远程射击速度提高 [c/00ffff:15%]
+					'''
+			}
+		}
+
+		Wands.Title.NotFind: 附近没有敌对生物,无法发射弹幕...
+
+		Items: {
+			TerrariaCrstal: {
+				DisplayName: 泰拉水晶
+				Tooltip:
+					'''
+					月亮末日后并不是终点，前进吧，冒险家。一切才刚刚开始！
+
+					增加全职业 [c/ff0000:60%] 伤害
+					增加所有武器的总伤害 [c/00ff00:50]
+					增加近战武器暴击率 [c/00ff55:10%]
+					魔法穿透目标护甲 [c/ffff00:15] 防御点
+					远程射击速度提高 [c/00ffff:15%]
+					月亮末日过后，真正的旅途刚刚开始……
+					'''
+			}
+
+			GoldGun: {
+				DisplayName: 皇家机枪
+				Tooltip:
+					'''
+					来自于皇家的御用枪械，用火枪作为子弹
+					传言是皇家工匠，
+					将[c/ffff00:非法枪械部件]以及[c/ffff00:黄金]融合造就的一把非常厉害的高速机枪，
+					能将目标瞬间打成马蜂窝！
+
+					皇家的荣光，在这里显现！
+					'''
+			}
+
+			GoldKingGun: {
+				DisplayName: 皇家防卫霰弹机枪
+				Tooltip:
+					'''
+					来自于皇家的御用枪械，用火枪作为子弹
+					[c/00ffff:加入了灵魂的祝福，现在能比曾经的更强！]
+
+					皇家的荣光，在这里显现！
+					'''
+			}
+
+			UltimateStarGun: {
+				DisplayName: 究极星星炮
+				Tooltip:
+					'''
+					哦，天哪。你获得了无与伦比的究极星星炮。
+					现在，谁才是真正的天空之主？有35%的概率不消耗弹药。
+					如果没有弹药且背包携带有天界徽章，则下一次射击真-星星炮模式将被激活。
+					在退出游戏前均可发射彩虹跟踪导弹且不消耗弹药……
+
+					星空下坠的瞬间，转瞬即逝的耀光也很美丽……
+					'''
+			}
+
+			BloodFireSword: {
+				DisplayName: 魔焰暮刃
+				Tooltip:
+					'''
+					全能与力量的化身，其令人恐惧的程度无可避免。
+
+					魔与神，本不能共存……
+					'''
+			}
+
+			FrostGreenWands: {
+				DisplayName: 丛林叶绿法杖
+				Tooltip:
+					'''
+					丛林正在焦躁不安的生长，天空的力量已经被亵渎……
+
+					昔日的和平已经消失，灾难正在逐步降临
+					'''
+			}
+
+			PinkCrystalSkyWands: {
+				DisplayName: 紫晶天空法杖
+				Tooltip:
+					'''
+					紫晶的魔矿力与恶地的魔矿和陨石的综合产物，传说是屠杀亵渎者用的。
+					一次性发射2个下坠的星星，极弱的击退力。
+
+					--在前世，他就为了泰拉的和平而献祭自己……，
+					-但这短暂的和平终究会被打破……
+					'''
+			}
+		}
+	}
+}
