@@ -12,27 +12,27 @@ namespace SkyHell.Items.Accessories
 		public override void SetStaticDefaults()
 		{
 
-			DisplayName.SetDefault("TerraCrystal");
+			// DisplayName.SetDefault("TerraCrystal");
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(14, 8));
             ItemID.Sets.AnimatesAsSoul[Item.type] = true;
-            DisplayName.AddTranslation(7,"泰拉水晶");
+            //DisplayName.AddTranslation(7,"泰拉水晶");
 
-			Tooltip.SetDefault("Lunar Madness it's not the end,go ahead, adventurer.\n" 
+			/* Tooltip.SetDefault("Lunar Madness it's not the end,go ahead, adventurer.\n" 
 			+ "It's just beginning!\n\n" 
 			+ "Increase [c/ff0000:60%] damage of All Professional\n"
             + "Increases base damage by [c/00ff00:50]\n"
 			+ "Increases [c/00ff55:10%] melee critical chance\n"
             + "Increases magic armor penetration by [c/ffff00:15]\n"
             + "Increases ranged shoot speed by [c/00ffff:15%]\n"
-            + "After the Lunar Madness, The real journey has just begun…");
+            + "After the Lunar Madness, The real journey has just begun…"); */
 
-			Tooltip.AddTranslation(7, "月亮末日后并不是终点，前进吧，冒险家。一切才刚刚开始！\n\n" 
-			+ "增加全职业 [c/ff0000:60%] 伤害\n"
-            + "增加所有武器的总伤害 [c/00ff00:50]\n"
-            + "增加近战武器暴击率 [c/00ff55:10%]\n"
-            + "魔法穿透目标护甲 [c/ffff00:15] 防御点\n"
-            + "远程射击速度提高 [c/00ffff:15%]\n"
-            + "月亮末日过后，真正的旅途刚刚开始……");
+			//Tooltip.AddTranslation(7, "月亮末日后并不是终点，前进吧，冒险家。一切才刚刚开始！\n\n" 
+			//+ "增加全职业 [c/ff0000:60%] 伤害\n"
+   //         + "增加所有武器的总伤害 [c/00ff00:50]\n"
+   //         + "增加近战武器暴击率 [c/00ff55:10%]\n"
+   //         + "魔法穿透目标护甲 [c/ffff00:15] 防御点\n"
+   //         + "远程射击速度提高 [c/00ffff:15%]\n"
+   //         + "月亮末日过后，真正的旅途刚刚开始……");
 
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
