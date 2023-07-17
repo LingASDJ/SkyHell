@@ -5,6 +5,7 @@
 
 # ����.xnb�ļ�
 *.xnb
+SkyHell.dll
 
 # ����TestĿ¼�µ������ļ�
 Sources/Commons/Function/Test/*.*
