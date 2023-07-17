@@ -12,20 +12,20 @@ namespace SkyHell.Items.Wands
 {
 	public class FrostGreenWands : ModItem
 	{
-		public override void SetStaticDefaults()
-		{
+		//public override void SetStaticDefaults()
+		//{
 
-			DisplayName.SetDefault("Jungle leaf green staff");
-			Tooltip.SetDefault("The jungle is growing restlessly, and the power of the sky has been desecrated…\n"
+			// DisplayName.SetDefault("Jungle leaf green staff");
+			/* Tooltip.SetDefault("The jungle is growing restlessly, and the power of the sky has been desecrated…\n"
 			+ "Launch three different barrages randomly…\n\n"
 			+ " the peace of the past has disappeared, and disaster is gradually coming\n\n"
 			+ "Magic missile: 90 damage\n\n"
 			+ "Crazy star: 100 damage\n\n"
-			+ "Rainbow Magic Missile: 120 damage");
+			+ "Rainbow Magic Missile: 120 damage"); */
 
-			DisplayName.AddTranslation(7,"丛林叶绿法杖");
-			Tooltip.AddTranslation(7,"丛林正在焦躁不安的生长，天空的力量已经被亵渎……\n\n昔日的和平已经消失，灾难正在逐步降临");
-		}
+			//DisplayName.AddTranslation(7,"丛林叶绿法杖");
+			//Tooltip.AddTranslation(7,"丛林正在焦躁不安的生长，天空的力量已经被亵渎……\n\n昔日的和平已经消失，灾难正在逐步降临");
+		//}
 
 		public override void SetDefaults()
 		{

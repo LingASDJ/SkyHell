@@ -9,16 +9,16 @@ namespace SkyHell.Items.Gun
 {
 	public class GoldKingGun : ModItem
 	{
-		public override void SetStaticDefaults()
-		{
+		//public override void SetStaticDefaults()
+		//{
 
-			DisplayName.SetDefault("Royal defense shotgun");
-			Tooltip.SetDefault("A shotgun from the royal family，It uses ammo bullet as bullets. [c/00ffff:Joined the blessing of the soul, now it can be stronger than ever!]\n\n"
-			+ " the glory of the royal family is here!");
+			// DisplayName.SetDefault("Royal defense shotgun");
+			/* Tooltip.SetDefault("A shotgun from the royal family，It uses ammo bullet as bullets. [c/00ffff:Joined the blessing of the soul, now it can be stronger than ever!]\n\n"
+			+ " the glory of the royal family is here!"); */
 
-			DisplayName.AddTranslation(7,"皇家防卫霰弹机枪");
-			Tooltip.AddTranslation(7,"来自于皇家的御用枪械，用火枪作为子弹\n[c/00ffff:加入了灵魂的祝福，现在能比曾经的更强！]\n\n皇家的荣光，在这里显现！");
-		}
+			//DisplayName.AddTranslation(7,"皇家防卫霰弹机枪");
+			//Tooltip.AddTranslation(7,"来自于皇家的御用枪械，用火枪作为子弹\n[c/00ffff:加入了灵魂的祝福，现在能比曾经的更强！]\n\n皇家的荣光，在这里显现！");
+		//}
 
 		public override void SetDefaults()
 		{

@@ -7,22 +7,22 @@ namespace SkyHell.Items.Gun
 {
 	public class GoldGun : ModItem
 	{
-		public override void SetStaticDefaults()
-		{
+		//public override void SetStaticDefaults()
+		//{
 
-			DisplayName.SetDefault("Royal machine gun");
+			// DisplayName.SetDefault("Royal machine gun");
 
-			DisplayName.AddTranslation(7, "皇家机枪");
+			//DisplayName.AddTranslation(7, "皇家机枪");
 
 
-			Tooltip.SetDefault("A machine gun from the royal family，It uses ammo bullet as bullets. \n"
+			/* Tooltip.SetDefault("A machine gun from the royal family，It uses ammo bullet as bullets. \n"
 			+ "It is said that the Royal craftsman, \n"
 			+ "fused [c/ffff00:illegal gun parts] and [c/ffff00:gold] to create a very powerful high-speed machine gun, \n"
 			+ "It can instantly turn the target into a hornet's nest! \n\n"
-			+ " the glory of the royal family is here! ");
+			+ " the glory of the royal family is here! "); */
 
-			Tooltip.AddTranslation(7, "来自于皇家的御用枪械，用火枪作为子弹\n传言是皇家工匠，\n将[c/ffff00:非法枪械部件]以及[c/ffff00:黄金]融合造就的一把非常厉害的高速机枪，\n能将目标瞬间打成马蜂窝！\n\n皇家的荣光，在这里显现！");
-		}
+			//Tooltip.AddTranslation(7, "来自于皇家的御用枪械，用火枪作为子弹\n传言是皇家工匠，\n将[c/ffff00:非法枪械部件]以及[c/ffff00:黄金]融合造就的一把非常厉害的高速机枪，\n能将目标瞬间打成马蜂窝！\n\n皇家的荣光，在这里显现！");
+		//}
 
 		public override void SetDefaults()
 		{

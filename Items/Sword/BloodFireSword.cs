@@ -13,16 +13,16 @@ namespace SkyHell.Items.Sword
 {
 	public class BloodFireSword : ModItem
 	{
-		public override void SetStaticDefaults()
-		{
+		//public override void SetStaticDefaults()
+		//{
 
-			DisplayName.SetDefault("Demon flame Twilight blade");
-			Tooltip.SetDefault("The embodiment of omnipotence and power, its degree of fear is inevitable.\n\n"
-			+ "A few words: Devil and God cannot coexist…");
+			// DisplayName.SetDefault("Demon flame Twilight blade");
+			/* Tooltip.SetDefault("The embodiment of omnipotence and power, its degree of fear is inevitable.\n\n"
+			+ "A few words: Devil and God cannot coexist…"); */
 
-			DisplayName.AddTranslation(7,"魔焰暮刃");
-			Tooltip.AddTranslation(7,"全能与力量的化身，其令人恐惧的程度无可避免。\n\n魔与神，本不能共存……");
-		}
+			//DisplayName.AddTranslation(7,"魔焰暮刃");
+			//Tooltip.AddTranslation(7,"全能与力量的化身，其令人恐惧的程度无可避免。\n\n魔与神，本不能共存……");
+		//}
 		public override void SetDefaults()
 		{
 			Item.useStyle = 1;
@@ -65,9 +65,8 @@ namespace SkyHell.Items.Sword
 
 		}
 
-		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+		public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
 		{
-
 			target.AddBuff(BuffID.BrainOfConfusionBuff, 10);
 		}
 
