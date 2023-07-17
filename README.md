@@ -1,21 +1,25 @@
+
+
 <div align="center"> 
+
+## [中文说明](https://github.com/LingASDJ/SkyHell/edit/main/README_ZH.md)
+  
 <!--滚动区域-->  
-<img src="https://capsule-render.vercel.app/api?type=Waving&color=FF8C00&height=200&animation=fadeIn&section=header&text=天狱之境-第一幕-荼生黯菌&fontSize=40" />
+<img src="https://capsule-render.vercel.app/api?type=Waving&color=FF8C00&height=200&animation=fadeIn&section=header&text=SkyHell-No.1-Mycotic-Crisis&fontSize=40" />
 </div>
 
 ```
-数百万的灵魂被囚禁在天空的虚空之中，
-常量已然失去平衡，世界的未来正在发生改变......
+Millions of souls are imprisoned in the void of the sky.
+The constants are out of balance and the future of the world is changing ......
 ```
 
-- 总作者：JDSA Ling
-- 美工：被子&Complexx
-- 音乐：Prohonor
-- 剧情设计：JDSA Ling
-- 测试协力：Fang,前路,LiuLiu,异乡人
-- 鸣谢：Everglow制作组的培养
+- Design&Code：JDSA Ling
+- Art-Worker：被子&Complexx
+- Music：Prohonor
+- Story Design：JDSA Ling
+- Test:Fang,前路,LiuLiu,异乡人
+- Thanks：Everglow
 - SkyHell-Start in 2022-07
 
-### Mod正在开发，敬请期待
-
+### Mod Dev……，Coming Soon
 </div>
