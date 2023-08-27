@@ -142,6 +142,11 @@ Mods: {
 					But this short-lived peace will eventually be broken...
 					'''
 			}
+
+			GhostTach: {
+				DisplayName: Ghost Tach
+				Tooltip: ""
+			}
 		}
 	}
 }

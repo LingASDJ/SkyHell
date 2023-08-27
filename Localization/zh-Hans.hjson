@@ -135,6 +135,11 @@ Mods: {
 					-但这短暂的和平终究会被打破……
 					'''
 			}
+
+			GhostTach: {
+				DisplayName: 暗刀 缠怨
+				Tooltip: 攻击有概率让敌人造成混乱效果。
+			}
 		}
 	}
 }

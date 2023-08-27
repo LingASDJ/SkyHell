@@ -25,7 +25,7 @@ namespace SkyHell.Items.Sword
 		//}
 		public override void SetDefaults()
 		{
-			Item.useStyle = 1;
+			Item.useStyle = ItemUseStyleID.Swing;
 			Item.damage =160;
 			Item.useAnimation = 15;
 			Item.useTime = 15;

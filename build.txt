@@ -1,5 +1,5 @@
-displayName = [c/ffa900:天][c/ffb900:狱][c/ffc900:之][c/ffd900:境]
+displayName = 天狱之境-第一幕-荼生黯菌(Demo)
 author = JDSALing
-version = 0.6.9999
+version = 0.7.0.1
 homepage = https://jq.qq.com/?_wv=1027&k=UqziOPNg
 includeSource = true
