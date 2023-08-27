@@ -18,7 +18,7 @@ namespace SkyHell.Items.Curison
             Item.rare = ItemRarityID.LightRed;
             Item.knockBack = 4f;
             Item.autoReuse = true;
-            Item.crit = 4;
+            Item.crit = 3;
             Item.UseSound = SoundID.DD2_DarkMageAttack;
             Item.DamageType = DamageClass.Melee;
             Item.shootSpeed = 20;
@@ -38,6 +38,15 @@ namespace SkyHell.Items.Curison
             if (Main.rand.NextFloat() <= 0.4f)
             {
                 target.AddBuff(BuffID.Confused, 300);
+            }
+
+            //吸血为目标伤害的10%
+            int heal = target.damage / 10;
+
+            if ((hit.Crit) || Main.rand.NextFloat() <= 0.1f)
+            {
+                player.statLife += heal;
+                player.HealEffect(heal);
             }
         }
 
