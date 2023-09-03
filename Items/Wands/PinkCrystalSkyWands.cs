@@ -79,8 +79,42 @@ namespace SkyHell.Items.Wands
 			return false;
 		}
 
+        //public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        //{
+        //    Vector2 target = Main.screenPosition + new Vector2(Main.mouseX, Main.mouseY);
+        //    float ceilingLimit = target.Y;
+        //    if (ceilingLimit > player.Center.Y - 200f)
+        //    {
+        //        ceilingLimit = player.Center.Y - 200f;
+        //    }
 
-		public override void AddRecipes()
+        //    // 计算旋转角度
+        //    float rotation = MathHelper.ToRadians(15); // 旋转角度为45度
+
+        //    for (int i = 0; i < 24; i++) // 修改循环次数为24，可以根据需要调整
+        //    {
+
+        //        Vector2 rotatedVelocity = velocity.RotatedBy(rotation * i);
+
+        //        // 创建弹幕
+        //        int proj = Projectile.NewProjectile(source, position, rotatedVelocity, type, damage, knockback, player.whoAmI, 0f, ceilingLimit);
+        //        Main.projectile[proj].timeLeft = 300;
+        //        Main.projectile[proj].penetrate = 9;
+        //        // 设置弹幕穿透次数为1000次 也就是无限
+        //        Main.projectile[proj].aiStyle = 30;
+        //        // 禁止弹幕与墙壁碰撞
+        //        Main.projectile[proj].tileCollide = false;
+        //        Main.projectile[proj].width = 60;
+        //        Main.projectile[proj].height = 60;
+        //        Main.projectile[proj].damage = damage;
+        //        Main.projectile[proj].knockBack = knockback;
+        //        Main.projectile[proj].scale = 0.8f;
+        //    }
+        //    return false;
+        //}
+
+
+        public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
 

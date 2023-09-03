@@ -1,5 +1,8 @@
 Mods: {
 	SkyHell: {
+		MagicRegen: 每秒恢复魔力值:
+		ManaCost: %魔力值消耗减少:
+
 		Prefixes: {
 			PreFixedMeleePreat.DisplayName: God Sect
 			PreFixedMeleeRubbish.DisplayName: Rust
@@ -145,6 +148,32 @@ Mods: {
 
 			GhostTach: {
 				DisplayName: Ghost Tach
+				Tooltip: ""
+			}
+
+			CursedSoulArmor: {
+				DisplayName: Cursed Soul Armor
+				Tooltip: ""
+			}
+
+			CursedSoulHood: {
+				DisplayName: Cursed Soul Hood
+				Tooltip: ""
+				Ling: ""
+			}
+
+			CursedSoulLeg: {
+				DisplayName: Cursed Soul Leg
+				Tooltip: ""
+			}
+
+			CursedSoulSummon: {
+				DisplayName: Cursed Soul Summon
+				Tooltip: ""
+			}
+
+			CursedSoulSummonHood: {
+				DisplayName: Cursed Soul Summon Hood
 				Tooltip: ""
 			}
 		}

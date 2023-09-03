@@ -1,7 +1,6 @@
 ﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MonoMod.RuntimeDetour;
 using MonoMod.RuntimeDetour.HookGen;
 using ReLogic.Content;
 using System;
@@ -34,7 +33,8 @@ namespace SkyHell.UI
             }
 
             // 在主线程上运行，否则会报错
-            Main.QueueMainThreadAction(() => {
+            Main.QueueMainThreadAction(() =>
+            {
                 // 文字内容与长宽
                 string text = Mod.DisplayName + " v" + Mod.Version;
                 var size = ChatManager.GetStringSize(FontAssets.MouseText.Value, text, Vector2.One).ToPoint();

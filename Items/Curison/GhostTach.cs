@@ -13,7 +13,7 @@ namespace SkyHell.Items.Curison
             Item.damage = 24;
             Item.useAnimation = 15;
             Item.useTime = 15;
-            Item.scale = 1f;
+            Item.scale = 1.3f;
             Item.value = Item.sellPrice(0, 10, 0, 0);
             Item.rare = ItemRarityID.LightRed;
             Item.knockBack = 4f;

@@ -1,5 +1,16 @@
 Mods: {
 	SkyHell: {
+		MagicRegen:
+			'''
+
+			魔法伤害提升:
+			'''
+		ManaCost:
+			'''
+			%
+			魔力值消耗减少:
+			'''
+
 		Prefixes: {
 			PreFixedMeleePreat.DisplayName: 神宗
 			PreFixedMeleeRubbish.DisplayName: 锈蚀
@@ -49,7 +60,7 @@ Mods: {
 			}
 		}
 
-		Wands.Title.NotFind: 附近没有敌对生物,无法发射弹幕...
+		// Wands.Title.NotFind: Mods.SkyHell.Wands.Title.NotFind
 
 		Items: {
 			TerrariaCrstal: {
@@ -127,6 +138,36 @@ Mods: {
 					攻击有概率让敌人造成混乱效果,
 					并且可能造成吸血效果。
 					'''
+			}
+
+			CursedSoulArmor: {
+				DisplayName: 咒魂胸甲
+				Tooltip: "{$CommonItemTooltip.IncreasesMaxManaBy}"
+			}
+
+			CursedSoulHood: {
+				DisplayName: 咒魂兜帽
+				Tooltip: "{$CommonItemTooltip.IncreasesMaxManaBy}"
+				// Ling: ""
+			}
+
+			CursedSoulLeg: {
+				DisplayName: 咒魂护胫
+				Tooltip:
+					'''
+					{$CommonItemTooltip.PercentIncreasedMovementSpeed},
+					生命再生速度提高。
+					'''
+			}
+
+			CursedSoulSummon: {
+				// DisplayName: Cursed Soul Summon
+				// Tooltip: ""
+			}
+
+			CursedSoulSummonHood: {
+				// DisplayName: Cursed Soul Summon Hood
+				// Tooltip: ""
 			}
 		}
 	}
