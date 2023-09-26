@@ -1,5 +1,5 @@
 displayName = 天狱之境
 author = JDSALing
-version = 0.7.0.2
+version = 0.7.0.3
 homepage = https://jq.qq.com/?_wv=1027&k=UqziOPNg
 includeSource = true

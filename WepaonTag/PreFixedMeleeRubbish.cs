@@ -5,7 +5,7 @@ namespace SkyHell.WepaonTag
 {
     //腐蚀 近战T4
     /*
-	 -70%伤害
+	 -10%伤害
 	 -10%大小
 	 */
     public class PreFixedMeleeRubbish : ModPrefix
@@ -27,7 +27,7 @@ namespace SkyHell.WepaonTag
 
         public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
         {
-            damageMult -= 0.70f * Power;
+            damageMult -= 0.20f * Power;
             scaleMult -= 0.1f * Power;
         }
 

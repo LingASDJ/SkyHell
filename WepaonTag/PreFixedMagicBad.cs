@@ -32,8 +32,8 @@ namespace SkyHell.WepaonTag
         {
             useTimeMult += 0.35f * Power;
             manaMult *= 1.25f * Power;
-            critBonus -= 10;
-            damageMult *= 0.3f;
+            critBonus -= 5;
+            damageMult *= 0.6f;
         }
 
         public override void ModifyValue(ref float valueMult)

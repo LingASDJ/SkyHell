@@ -28,7 +28,7 @@ namespace SkyHell.Items.Curison.Armor
 
         public static int MagicManaMax = 30;
         public static float ManaRegen = 0.15f;
-        public static float ManaCost = 15f;
+        public static float ManaCost = 80f;
         public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MagicManaMax,ManaRegen, ManaCost);
 
         //套装奖励
@@ -38,7 +38,7 @@ namespace SkyHell.Items.Curison.Armor
                 Language.GetTextValue("Mods.SkyHell.MagicRegen") + ManaRegen+
                 Language.GetTextValue("Mods.SkyHell.ManaCost") + ManaCost;
             player.GetDamage(DamageClass.Magic) += ManaRegen;
-            player.manaCost -= ManaCost;
+            player.manaCost *= 0.8f;
         }
 
 
