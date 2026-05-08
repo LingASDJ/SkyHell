@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -35,15 +36,14 @@ namespace SkyHell.Items.Curison
 
         public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            if (Main.rand.NextFloat() <= 0.4f)
+            if (Main.rand.NextFloat() <= 0.4f || hit.Crit)
             {
                 target.AddBuff(BuffID.Confused, 300);
             }
 
-            //吸血为目标伤害的10%
             int heal = target.damage / 10;
 
-            if ((hit.Crit) || Main.rand.NextFloat() <= 0.1f)
+            if (hit.Crit)
             {
                 player.statLife += heal;
                 player.HealEffect(heal);

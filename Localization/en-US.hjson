@@ -145,7 +145,11 @@ Mods: {
 
 			GhostTach: {
 				DisplayName: Ghost Tach
-				Tooltip: ""
+				Tooltip:
+					'''
+					Attacks may cause Confusion.
+					Crits guarantee lifesteal and Confusion.
+					'''
 			}
 		}
 	}

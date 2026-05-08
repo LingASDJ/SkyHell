@@ -43,7 +43,7 @@ namespace SkyHell.Items.Wands
 			Item.rare = 9;
 			Item.UseSound = SoundID.Item8;
 			Item.autoReuse = true;
-			Item.shoot = 228;
+			Item.shoot = ProjectileID.ChlorophyteBullet;
             Item.shootSpeed = 12f;
 
             Item.crit = 5; // 基本暴击率加上游戏的+4基础率=8
@@ -63,11 +63,11 @@ namespace SkyHell.Items.Wands
 				}
 				else if (Main.rand.Next(100) <= 60)
 				{
-					Projectile.NewProjectile(source, position, plrToMouse, ProjectileID.RainbowRodBullet,damage, knockback, player.whoAmI, 0f);
+					Projectile.NewProjectile(source, position, plrToMouse, ProjectileID.ChlorophyteBullet, damage, knockback, player.whoAmI, 0f);
 				}
-				else if (Main.rand.Next(100) >= 30)
+				else if (Main.rand.Next(100) >= 15)
 				{
-					Projectile.NewProjectile(source, position, plrToMouse, ProjectileID.MagicMissile, damage, knockback, player.whoAmI, 0f);
+					Projectile.NewProjectile(source, position, plrToMouse, ProjectileID.FairyQueenMagicItemShot, damage, knockback, player.whoAmI, 0f);
 				}
 
 		

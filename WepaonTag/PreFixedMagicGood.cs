@@ -17,12 +17,12 @@ namespace SkyHell.WepaonTag
 
 		public override PrefixCategory Category => PrefixCategory.Magic;
 
-		public override bool CanRoll(Item item)
-		{
-			return true;
-		}
+        public override bool CanRoll(Item item)
+        {
+            return item.DamageType == DamageClass.Magic;
+        }
 
-		public override float RollChance(Item item)
+        public override float RollChance(Item item)
 		{
 			return 1.4f;
 		}

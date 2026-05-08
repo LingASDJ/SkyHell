@@ -12,7 +12,7 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 
         public override bool CanRoll(Item item)
 		{
-			return true;
+			return item.DamageType == DamageClass.Magic;
 		}
 
 		public override float RollChance(Item item)

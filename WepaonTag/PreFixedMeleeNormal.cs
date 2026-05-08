@@ -16,12 +16,13 @@ namespace SkyHell.WepaonTag
 
         public override PrefixCategory Category => PrefixCategory.Melee;
 
-        public override bool CanRoll(Item item)
-		{
-			return true;
-		}
 
-		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
+        public override bool CanRoll(Item item)
+        {
+            return item.DamageType == DamageClass.Melee;
+        }
+
+        public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
 		{
 			damageMult *= 1+0.05f * Power;
 			scaleMult -= 0.1f * Power;

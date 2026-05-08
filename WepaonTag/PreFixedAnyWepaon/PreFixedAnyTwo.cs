@@ -12,11 +12,11 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
         public override PrefixCategory Category => PrefixCategory.Ranged;
 
         public override bool CanRoll(Item item)
-		{
-			return true;
-		}
+        {
+            return item.DamageType == DamageClass.Ranged;
+        }
 
-		public override float RollChance(Item item)
+        public override float RollChance(Item item)
 		{
 			return 0.05f;
 		}
