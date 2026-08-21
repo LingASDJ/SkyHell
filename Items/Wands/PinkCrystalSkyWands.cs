@@ -88,7 +88,7 @@ namespace SkyHell.Items.Wands
 
 			recipe.AddRecipeGroup("DBRecipes", 15);
 
-			recipe.AddRecipeGroup(RecipeGroupID.IronBar, 20);
+			recipe.AddRecipeGroup(RecipeGroups.IronBar, 20);
 
 			recipe.AddIngredient(ItemID.MeteoriteBar, 15);
 

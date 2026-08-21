@@ -5,93 +5,69 @@ using Terraria.Localization;
 
 namespace SkyHell.Content
 {
-	public class SkyHellRecipes : ModSystem
-	{
-		//生命水晶
-		public override void AddRecipes()
-		{
-			Recipe baseRecipe = Recipe.Create(ItemID.LifeCrystal, 1);
-			baseRecipe.AddIngredient(ItemID.HealingPotion, 1)
-			.AddRecipeGroup("FXRecipes", 30)
-			.AddRecipeGroup("TNRecipes", 5)
+    public class SkyHellRecipes : ModSystem
+    {
+        public override void AddRecipes()
+        {
+            Recipe.Create(ItemID.LifeCrystal, 1)
+                .AddIngredient(ItemID.HealingPotion, 1)
+                .AddRecipeGroup("FXRecipes", 30)
+                .AddRecipeGroup("TNRecipes", 5)
+                .AddTile(TileID.Anvils)
+                .Register();
+        }
 
-			.AddTile(TileID.Anvils)
-			.Register();
-		}
+        public override void AddRecipeGroups()
+        {
+            // 1. 魔矿锭/猩红矿锭
+            RecipeGroup.Register("DBRecipes", "Mods.SkyHell.Config.Title.DBTitle",
+                ItemID.DemoniteBar,
+                ItemID.CrimtaneBar
+            );
 
-		public override void AddRecipeGroups()
-		{
-			RecipeGroup recipeGroupone = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.DBTitle"), //游戏显示合成组的名字
-				new int[]
-				{
-				ItemID.DemoniteBar,
-				ItemID.CrimtaneBar
-				});//添加ID
+            // 2. FXRecipes (763=丛林孢子, 61=丛林玫瑰)
+            RecipeGroup.Register("FXRecipes", "Mods.SkyHell.Config.Title.EZTitle",
+                763,
+                61
+            );
 
-			RecipeGroup.RegisterGroup("DBRecipes", recipeGroupone);
+            // 3. TNRecipes (1329=毒刺, 86=蚁狮上颚)
+            RecipeGroup.Register("TNRecipes", "Mods.SkyHell.Config.Title.TNTitle",
+                1329,
+                86
+            );
 
-			RecipeGroup recipeGrouptwo = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.EZTitle"), //游戏显示合成组的名字
-				new int[]
-				{
-				763,
-				61
-				});//添加ID
-			RecipeGroup.RegisterGroup("FXRecipes", recipeGrouptwo);
+            // 4. 新三王魂
+            RecipeGroup.Register("SHKRecipes", "Mods.SkyHell.Config.Title.SHKTitles",  // 建议修改键名避免重复
+                ItemID.SoulofFright,
+                ItemID.SoulofMight,
+                ItemID.SoulofSight
+            );
 
-			RecipeGroup recipeGroupthree = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.TNTitle"),
-				new int[]
-				{
-				1329,
-				86
-				});//添加ID
-			RecipeGroup.RegisterGroup("TNRecipes", recipeGroupthree);
+            // 5. 粉晶法杖（单物品组）
+            RecipeGroup.Register("PinkWandsRecipes", "Mods.SkyHell.Config.Title.PinkTitle",  // 建议修改键名
+                ModContent.ItemType<Items.Wands.PinkCrystalSkyWands>()
+            );
 
-			//"任意新三王掉落的魂", //游戏显示合成组的名字
-			RecipeGroup recipeGroupfour = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.STitle"), 
-				new int[]
-				{
-				ItemID.SoulofFright,
-				ItemID.SoulofMight,
-				ItemID.SoulofSight,
-				});//添加ID
+            // 6. EARecipes (795=珍珠木, 46=?)
+            RecipeGroup.Register("EARecipes", "Mods.SkyHell.Config.Title.DSTitle",
+                795,
+                46
+            );
 
-			RecipeGroup.RegisterGroup("SHKRecipes", recipeGroupfour);
+            // 7. 精金/钛金锭
+            RecipeGroup.Register("TJRecipes", "Mods.SkyHell.Config.Title.TJTitle",
+                ItemID.AdamantiteBar,
+                ItemID.TitaniumBar
+            );
 
-			RecipeGroup recipeGroupfive = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.STitle"),
-				ModContent.ItemType<Items.Wands.PinkCrystalSkyWands>());
-
-			RecipeGroup.RegisterGroup("PinkWandsRecipes", recipeGroupfive);
-
-			RecipeGroup recipeGroupsix = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.DSTitle"),
-				new int[]
-				{
-				795,
-				46,
-				});//添加ID
-
-			RecipeGroup.RegisterGroup("EARecipes", recipeGroupsix);
-
-			RecipeGroup recipeGroupseven = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.TJitle"),
-			new int[]
-			{
-						ItemID.AdamantiteBar,
-						ItemID.TitaniumBar
-			});//添加ID
-
-			RecipeGroup.RegisterGroup("TJRecipes", recipeGroupseven);
-
-			RecipeGroup recipeGroupeight = new RecipeGroup(() => Language.GetTextValue("Mods.SkyHell.Config.Title.ZYSTitle"),
-			new int[]
-			{
-						ItemID.SorcererEmblem,
-						ItemID.WarriorEmblem,
-						ItemID.RangerEmblem,
-						ItemID.SummonerEmblem,
-
-			});//添加ID
-
-			RecipeGroup.RegisterGroup("RYSRecipes", recipeGroupeight);
-
-		}
-	}
+            // 8. 职业徽章
+            RecipeGroup.Register("RYSRecipes", "Mods.SkyHell.Config.Title.ZYSTitle",
+                ItemID.SorcererEmblem,
+                ItemID.WarriorEmblem,
+                ItemID.RangerEmblem,
+                ItemID.SummonerEmblem
+            );
+        }
+    }
 }

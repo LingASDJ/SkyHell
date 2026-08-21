@@ -45,9 +45,9 @@ namespace SkyHell.Items.Accessories
 			Item.value = Item.sellPrice(0, 80, 0, 0);
 			Item.rare = -11;
 		}
-        public override void PostUpdate()
+        public override void PostUpdate(WorldItem item)
         {
-            Lighting.AddLight(Item.Center, Color.WhiteSmoke.ToVector3() * 0.55f * Main.essScale);
+            Lighting.AddLight(item.Center, Color.WhiteSmoke.ToVector3() * 0.55f * Main.essScale);
         }
 
 
