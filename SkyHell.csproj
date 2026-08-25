@@ -9,6 +9,8 @@
     <PackageReference Include="Solaestas.tModLoader.ModBuilder" Version="1.1.2" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Chars\Mob\" />
+    <Folder Include="Items\Armor\" />
     <Folder Include="Music\" />
   </ItemGroup>
 </Project>
