@@ -34,7 +34,7 @@ namespace SkyHell.Items.Gun
 			Item.UseSound = SoundID.Item36;
 
 			Item.DamageType = DamageClass.Ranged;
-			Item.damage = 6;
+			Item.damage = 35;
 			Item.knockBack = 6f;
 			Item.noMelee = true;
 

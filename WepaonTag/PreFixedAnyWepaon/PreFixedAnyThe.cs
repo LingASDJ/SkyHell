@@ -18,7 +18,7 @@ namespace SkyHell.WepaonTag.PreFixedWepaon
 
         public override float RollChance(Item item)
 		{
-			return 0.05f;
+			return 0.15f;
 		}
 
 		public override void SetStats(ref float damageMult, ref float knockbackMult, ref float useTimeMult, ref float scaleMult, ref float shootSpeedMult, ref float manaMult, ref int critBonus)
